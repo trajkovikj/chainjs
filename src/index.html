@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChainJS</title>
+</head>
+<body>
+    
+    <script src="../dist/chain.js"></script>
+    <script type="application/javascript">
+    
+        var testArray = [{
+            id: 1,
+            name: "test",
+        },{
+            id: 2,
+            name: "test2",
+        }];
+
+        setupArrayPrototypes();
+
+        var selectedArray = testArray.cselect(function (x) {
+            return x.name;
+        });
+
+        console.log(selectedArray);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+  "name": "chainjs",
+  "version": "1.0.0",
+  "description": "Fluent API for working with JavaScript arrays",
+  "main": "src/chain.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "build:dev": "npm run webpack -- --env.mode development",
+    "build:prod": "npm run webpack -- --env.mode production",
+    
+    "webpack": "webpack",
+    "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
+
+    "dev:debug": "npm run debug -- --env.mode development",
+    "prod": "npm run webpack -- --env.mode production",
+    "prod:debug": "npm run debug -- --env.mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trajkovikj/chainjs.git"
+  },
+  "keywords": [
+    "chain",
+    "chainjs",
+    "linq",
+    "filter",
+    "map",
+    "reduce",
+    "arrays",
+    "collections"
+  ],
+  "author": "Stefan Trajkovikj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trajkovikj/chainjs/issues"
+  },
+  "homepage": "https://github.com/trajkovikj/chainjs#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
